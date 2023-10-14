@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row m-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          Connected user information :
+        </div>
+        <div class="card-body">
+          <div *ngIf="user">
+            <p>ID: {{user.id}}</p>
+            <p>Email: {{user.email}}</p>
+            <p>Role: {{user.role.name}} </p>
+            <strong>Permissions:</strong>
+            <ul>
+              <li *ngFor="let p of user.role.permissions">
+                {{ p }}
+              </li>
+            </ul>
+          </div>
+          Message :<p>{{pubContent}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

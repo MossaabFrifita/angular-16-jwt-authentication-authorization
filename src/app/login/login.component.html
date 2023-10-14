@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Login</h4>
+          <div class="alert alert-danger" *ngIf="errorMessage">
+            <p>{{errorMessage}}</p>
+          </div>
+          <form #formLogin="ngForm" (ngSubmit)="onSubmitLogin(formLogin)">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email Address"
+                ngModel
+                #email="ngModel"
+                name="email"
+                required
+                email>
+              <div *ngIf="email.errors && formLogin.submitted" class="text-danger">
+                Email is required!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                ngModel
+                #password="ngModel"
+                name="password"
+                required
+                minlength="6">
+                <div *ngIf="password.errors && formLogin.submitted" class="text-danger">
+                  <div *ngIf="password.errors['required']">Password is required</div>
+                  <div *ngIf="password.errors['minlength']" >
+                    Password must be at least 6 characters
+                  </div>
+                </div>
+            </div>
+            <button  type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
