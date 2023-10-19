@@ -19,7 +19,6 @@ This project demonstrates JWT (JSON Web Tokens) authentication and role-based au
 
 - Node.js and npm
 - Angular CLI
-- Bootstrap (optional)
 
 ### Installation
 
