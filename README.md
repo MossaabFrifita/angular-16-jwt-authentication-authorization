@@ -1,27 +1,43 @@
-# AngularAuth
+# Angular 16 JWT Authentication and Role-Based Authorization
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+This project demonstrates JWT (JSON Web Tokens) authentication and role-based authorization with Angular 16. It includes features such as secure storage of tokens in HttpOnly cookies, token management (access_token and refresh_token), auto-login, auto-logout, and role-based access control for enhanced security.
+- This project is built with Angular 16 and showcases best practices for authentication and authorization.
+- Token-based authentication is a fundamental security concept in modern web applications.
+## Features
 
-## Development server
+✅ Secure storage of tokens in HttpOnly cookies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+✅ Token management for access and refresh tokens.
 
-## Code scaffolding
+✅ Implementation of auto-login and auto-logout for a seamless user experience.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+✅ Role-based access control for increased security.
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- Node.js and npm
+- Angular CLI
+- Bootstrap (optional)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository.
+2. Navigate to the project folder.
+3. Run `npm install` to install the dependencies.
+4. Configure the project as per your requirements.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
 
-## Further help
+1. Run the application using `ng serve`.
+2. Explore the authentication and authorization features.
+3. Customize the project as needed.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Backend API
+For this Angular application to function correctly, you need a backend API that handles authentication and provides the necessary data.
+You can find the source code for the backend API on the corresponding GitHub [repository](https://github.com/MossaabFrifita/spring-boot-3-security-6-jwt).
+Make sure you also have the backend API up and running to fully test the authentication and authorization features of this Angular application.
+
+
+
